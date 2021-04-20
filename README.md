@@ -1,4 +1,8 @@
-### Hi there 👋
+### 
+View in [Github Pages](https://xiomarar.github.io/xiomaraR/)
+
+
+Hi there 👋
 
 - 🔭 I’m currently working on creating better studying habits.
 - 🌱 I’m currently learning frontend web dev.
