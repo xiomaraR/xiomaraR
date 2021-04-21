@@ -29,11 +29,11 @@ body {
 }
 
 .header {
-   padding-top: 50px;
+   padding-top: 35px;
 } 
 
 .header img {
-    height: 50px;
+    height: 40px;
 }
 
 .main img {
@@ -44,18 +44,12 @@ body {
     max-width: 100%;
 	margin: 0px auto;
     width: 1000px;
-    
 }
 
 .main {
 display: flex;
 margin: 100px 0;
 }
-
-/*.main > div {
-    flex: 1;
-    margin: 30px;
-} */
 
 .main > div:first-child {
     flex: 0.6;
@@ -121,21 +115,51 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .main {
+    body {
+        background-image: url(bg-mobile.svg);
+        background-size: cover;
+        padding: 2rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+    .wrapper {
         flex-direction: column;
-        margin: 50px 0;
     }
-    .main > div:first-child {
-        flex: 1;
-        margin-right: 0;
+
+    .main {
+        display: flex;
     }
-    
-    .main > div:last-child {
-        flex: 1;
-        margin-left: 0;
+
+    .main img {
+        max-width: 100%;
+    }
+
+    .image-box {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        margin-bottom: 4.75rem;
+        width: 50%;
+        height: 50%;
+      }
+      
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 1rem;
+        padding: 0 1rem;
+        width: 50%;
     }
-    .social-links {
-        justify-content: center;
+    button {
+        padding: 1rem 5rem;
+        margin-top: 2rem;
+      }
+ 
+    .social-area {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
     }
 }
